@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1e40af" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="96" fill="url(#bgGrad)" stroke="#38bdf8" stroke-width="4" />
+  
+  <!-- Decorative Tech Elements -->
+  <circle cx="100" cy="100" r="82" fill="none" stroke="rgba(255,255,255,0.15)" stroke-dasharray="6,4" stroke-width="2" />
+  
+  <!-- Head & Body Representation -->
+  <circle cx="100" cy="75" r="32" fill="#ffffff" />
+  <path d="M42 165 C45 120, 70 115, 100 115 C130 115, 155 120, 158 165 Z" fill="#ffffff" />
+  
+  <!-- Code Badge / Initials -->
+  <rect x="70" y="145" width="60" height="24" rx="12" fill="#0f172a" />
+  <text x="100" y="162" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#38bdf8" text-anchor="middle">&lt;KS /&gt;</text>
+</svg>

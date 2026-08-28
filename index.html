@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Krishna Sahu - BCA Student & Aspiring Full-Stack Developer based in Uttar Pradesh, India. Portfolio featuring web projects, skills, education, and contact." />
+  <meta name="keywords" content="Krishna Sahu, Portfolio, BCA Student, Full-Stack Developer, Web Developer, JavaScript, HTML, CSS, India" />
+  <meta name="author" content="Krishna Sahu" />
+
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Krishna Sahu | Student & Aspiring Full-Stack Developer" />
+  <meta property="og:description" content="Explore projects, skills, and contact Krishna Sahu - BCA Student & Full-Stack Developer from Uttar Pradesh, India." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/avatar.svg" />
+
+  <title>Krishna Sahu | BCA Student & Aspiring Full-Stack Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/avatar.svg" />
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Skip Link for Keyboard Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ====================================================
+       1. NAVBAR
+       ==================================================== -->
+  <header class="header" id="header">
+    <div class="container navbar-container">
+      <a href="#hero" class="brand-logo" aria-label="Krishna Sahu Homepage">
+        <span class="logo-code">&lt;</span><span class="logo-name">Krishna</span><span class="logo-code">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#certificates" class="nav-link">Certificates</a></li>
+          <li class="nav-item"><a href="#journey" class="nav-link">Journey</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Navbar Action Controls -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light theme" title="Toggle Theme">
+          <span class="theme-icon sun-icon" aria-hidden="true">☀️</span>
+          <span class="theme-icon moon-icon" aria-hidden="true">🌙</span>
+        </button>
+
+        <!-- Resume Action Button -->
+        <a href="assets/resume/krishna-sahu-resume.pdf" class="btn btn-outline btn-sm nav-resume-btn" target="_blank" rel="noopener noreferrer" download>
+          Resume <span>↓</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-toggle" id="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====================================================
+       MAIN CONTENT CONTAINER
+       ==================================================== -->
+  <main id="main-content">
+
+    <!-- ====================================================
+         2. HERO SECTION
+         ==================================================== -->
+    <section class="hero-section section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span class="status-text">Available for Internships & Projects</span>
+          </div>
+
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-title">Krishna Sahu</h1>
+          
+          <h2 class="hero-subtitle">
+            <span class="static-prefix">I build </span>
+            <span class="typing-text" id="typing-text">Full-Stack Web Applications</span>
+            <span class="cursor" aria-hidden="true">|</span>
+          </h2>
+
+          <p class="hero-description" id="hero-bio">
+            BCA Student and aspiring Full-Stack Developer from Uttar Pradesh, India. 
+            Passionate about writing clean, maintainable code and turning practical ideas into responsive, user-friendly digital products.
+          </p>
+
+          <div class="hero-location">
+            <span class="location-icon" aria-hidden="true">📍</span>
+            <span>Uttar Pradesh, India</span>
+          </div>
+
+          <!-- Hero Call To Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            <a href="assets/resume/krishna-sahu-resume.pdf" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+              View Resume
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials" id="hero-socials" aria-label="Social media profiles">
+            <!-- Populated via script.js -->
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card">
+            <div class="profile-glow"></div>
+            <img src="assets/images/avatar.svg" alt="Krishna Sahu profile illustration" class="profile-avatar" width="200" height="200" />
+            <div class="profile-info">
+              <span class="profile-name">Krishna Sahu</span>
+              <span class="profile-tag">BCA Student • Web Dev</span>
+            </div>
+            <div class="profile-badges">
+              <span class="mini-badge">HTML/CSS</span>
+              <span class="mini-badge">JavaScript</span>
+              <span class="mini-badge">Node.js</span>
+              <span class="mini-badge">SQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         3. ABOUT SECTION
+         ==================================================== -->
+    <section class="about-section section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;01. About /&gt;</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Get to know who I am, my background, and what drives my work.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-column">
+            <h3 class="about-heading">Curious Learner & Problem Solver</h3>
+            <p class="about-p">
+              I am currently pursuing a <strong>Bachelor of Computer Applications (BCA)</strong> in Uttar Pradesh, India. 
+              My journey into technology began with a strong interest in understanding how software works under the hood and how modern websites are engineered.
+            </p>
+            <p class="about-p">
+              I focus on the fundamentals of <strong>full-stack development</strong>, object-oriented programming, and algorithms. 
+              I value <em>readability, accessibility, and security</em> over unnecessary complexity, believing that great software is simple to maintain and delightful to use.
+            </p>
+            <p class="about-p">
+              When I'm not writing code or studying, I enjoy exploring open-source projects, learning new web standards, and solving algorithmic problems.
+            </p>
+          </div>
+
+          <div class="about-cards-column">
+            <div class="info-card">
+              <div class="info-card-icon">🎓</div>
+              <div class="info-card-content">
+                <h4>Degree & Discipline</h4>
+                <p>Bachelor of Computer Applications (BCA)</p>
+                <span class="info-meta">Core Computer Science & Web Engineering</span>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-icon">💻</div>
+              <div class="info-card-content">
+                <h4>Primary Focus</h4>
+                <p>Full-Stack Web Development</p>
+                <span class="info-meta">JavaScript, Node.js, Databases & Clean UI</span>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-icon">📍</div>
+              <div class="info-card-content">
+                <h4>Location & Availability</h4>
+                <p>Uttar Pradesh, India</p>
+                <span class="info-meta">Open to Remote & On-site Internships</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         4. SKILLS SECTION
+         ==================================================== -->
+    <section class="skills-section section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;02. Skills /&gt;</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">A breakdown of technologies, programming languages, and tools I work with.</p>
+        </div>
+
+        <div class="skills-grid" id="skills-container">
+          <!-- Populated dynamically via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         5. PROJECTS SECTION
+         ==================================================== -->
+    <section class="projects-section section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;03. Projects /&gt;</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world practical projects built with clean, maintainable code.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="project-filters" id="project-filters" role="tablist" aria-label="Filter projects by category">
+          <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+          <button type="button" class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full-Stack</button>
+          <button type="button" class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend</button>
+          <button type="button" class="filter-btn" data-filter="javascript" role="tab" aria-selected="false">JavaScript</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-container">
+          <!-- Populated dynamically via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         6. EDUCATION SECTION
+         ==================================================== -->
+    <section class="education-section section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;04. Education /&gt;</span>
+          <h2 class="section-title">Education & Academics</h2>
+          <p class="section-subtitle">My academic foundations and relevant computer science coursework.</p>
+        </div>
+
+        <div class="education-timeline" id="education-container">
+          <!-- Populated dynamically via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         7. CERTIFICATES SECTION
+         ==================================================== -->
+    <section class="certificates-section section" id="certificates">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;05. Certificates /&gt;</span>
+          <h2 class="section-title">Certifications & Courses</h2>
+          <p class="section-subtitle">Verified learning achievements and skill certifications.</p>
+        </div>
+
+        <div class="certificates-grid" id="certificates-container">
+          <!-- Populated dynamically via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         8. LEARNING JOURNEY SECTION
+         ==================================================== -->
+    <section class="journey-section section" id="journey">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;06. Journey /&gt;</span>
+          <h2 class="section-title">Learning Journey</h2>
+          <p class="section-subtitle">Milestones achieved and the roadmap of what I am currently working towards.</p>
+        </div>
+
+        <div class="journey-timeline" id="journey-container">
+          <!-- Populated dynamically via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         9. CONTACT SECTION
+         ==================================================== -->
+    <section class="contact-section section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;07. Contact /&gt;</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Have a question, project inquiry, or internship opportunity? Let's connect!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Contact Cards -->
+          <div class="contact-info-column">
+            <h3 class="contact-subheading">Contact Information</h3>
+            <p class="contact-intro">
+              Feel free to reach out directly through any of the channels below or use the message form.
+            </p>
+
+            <div class="contact-cards-list" id="contact-details">
+              <!-- Populated via script.js -->
+            </div>
+          </div>
+
+          <!-- Right Column: Validated Contact Form -->
+          <div class="contact-form-column">
+            <div class="form-wrapper">
+              <h3 class="contact-subheading">Send a Message</h3>
+              
+              <form id="contact-form" class="contact-form" novalidate>
+                <!-- Anti-spam Honeypot (hidden from users) -->
+                <div class="form-group honeypot-field" style="display:none;" aria-hidden="true">
+                  <label for="form-website">Website (Leave blank)</label>
+                  <input type="text" id="form-website" name="website" tabindex="-1" autocomplete="off" />
+                </div>
+
+                <!-- Name Field -->
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Your Name <span class="required">*</span></label>
+                  <input 
+                    type="text" 
+                    id="contact-name" 
+                    name="name" 
+                    class="form-input" 
+                    placeholder="e.g. Rahul Sharma" 
+                    required 
+                    maxlength="60"
+                    autocomplete="name"
+                  />
+                  <span class="form-error" id="name-error" aria-live="polite"></span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Email Address <span class="required">*</span></label>
+                  <input 
+                    type="email" 
+                    id="contact-email" 
+                    name="email" 
+                    class="form-input" 
+                    placeholder="e.g. rahul@example.com" 
+                    required 
+                    maxlength="100"
+                    autocomplete="email"
+                  />
+                  <span class="form-error" id="email-error" aria-live="polite"></span>
+                </div>
+
+                <!-- Subject Field -->
+                <div class="form-group">
+                  <label for="contact-subject" class="form-label">Subject <span class="required">*</span></label>
+                  <input 
+                    type="text" 
+                    id="contact-subject" 
+                    name="subject" 
+                    class="form-input" 
+                    placeholder="e.g. Internship Opportunity / Project Collaboration" 
+                    required 
+                    maxlength="120"
+                  />
+                  <span class="form-error" id="subject-error" aria-live="polite"></span>
+                </div>
+
+                <!-- Message Field -->
+                <div class="form-group">
+                  <div class="label-with-counter">
+                    <label for="contact-message" class="form-label">Message <span class="required">*</span></label>
+                    <span class="char-counter" id="char-counter">0 / 1000</span>
+                  </div>
+                  <textarea 
+                    id="contact-message" 
+                    name="message" 
+                    class="form-textarea" 
+                    rows="5" 
+                    placeholder="Write your message here (minimum 10 characters)..." 
+                    required 
+                    maxlength="1000"
+                  ></textarea>
+                  <span class="form-error" id="message-error" aria-live="polite"></span>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                  <span class="btn-text">Send Message</span>
+                  <span class="btn-spinner" style="display:none;" aria-hidden="true">⏳</span>
+                </button>
+
+                <!-- Status Feedback Message Box -->
+                <div class="form-status" id="form-status" role="alert" style="display:none;"></div>
+                
+                <p class="form-note">
+                  🔒 Safe form: Client-validated with zero secret exposure. See README to connect to Formspree or EmailJS.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================
+       10. FOOTER
+       ==================================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <span class="logo-code">&lt;</span><span class="logo-name">Krishna Sahu</span><span class="logo-code">/&gt;</span>
+          </a>
+          <p class="footer-motto">BCA Student & Aspiring Full-Stack Developer • Building simple, secure and maintainable software.</p>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <span id="current-year">2026</span> Krishna Sahu. Designed & coded with pure HTML5, CSS3 & JavaScript.
+        </p>
+        
+        <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to Top">
+          ↑ Top
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================
+       PROJECT DETAILS MODAL (ACCESSIBLE DIALOG)
+       ==================================================== -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button type="button" class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <span class="modal-category" id="modal-category">Full-Stack</span>
+        <h3 class="modal-title" id="modal-title">Project Title</h3>
+      </div>
+      <div class="modal-body">
+        <img src="" alt="" class="modal-image" id="modal-image" />
+        <p class="modal-description" id="modal-description"></p>
+        
+        <h4 class="modal-subheading">Key Highlights:</h4>
+        <ul class="modal-features" id="modal-features"></ul>
+
+        <h4 class="modal-subheading">Technologies Used:</h4>
+        <div class="modal-tech-list" id="modal-tech"></div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn btn-outline btn-sm" id="modal-github" target="_blank" rel="noopener noreferrer">View GitHub</a>
+        <a href="#" class="btn btn-primary btn-sm" id="modal-demo" target="_blank" rel="noopener noreferrer">Live Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
