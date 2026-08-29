@@ -275,6 +275,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initScrollSpy();
   initBackToTop();
   updateCurrentYear();
+  fetchVisitorDetails();
 });
 
 /**
@@ -1108,4 +1109,43 @@ function updateCurrentYear() {
   if (yearSpan) {
     yearSpan.textContent = String(new Date().getFullYear());
   }
+} /**
+ * AUTOMATIC VISITOR IP & LOCATION DETECTOR
+ */
+function fetchVisitorDetails() {
+  // 👇👇 YEH NAYA CODE ADD KAREIN (Device, Browser aur Screen ke liye) 👇👇
+  const deviceField = document.getElementById("visitor-device");
+  const browserField = document.getElementById("visitor-browser");
+  const screenField = document.getElementById("visitor-screen");
+  // Device check (Phone hai ya Laptop)
+  const isMobile = /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent);
+  if (deviceField)
+    deviceField.value = isMobile ? "Mobile Phone 📱" : "Desktop / Laptop 💻";
+  // Browser check (Chrome/Edge/Safari)
+  let browserName = "Modern Web Browser";
+  if (navigator.userAgent.includes("Edg")) browserName = "Microsoft Edge";
+  else if (navigator.userAgent.includes("Chrome"))
+    browserName = "Google Chrome";
+  else if (navigator.userAgent.includes("Safari")) browserName = "Apple Safari";
+  else if (navigator.userAgent.includes("Firefox"))
+    browserName = "Mozilla Firefox";
+  if (browserField) browserField.value = browserName;
+  // Screen resolution
+  if (screenField)
+    screenField.value = `${window.screen.width} x ${window.screen.height}`;
+  // 👆👆 YAHAN TAK NAYA CODE HAI 👆👆
+  fetch("https://ipapi.co/json/")
+    .then((res) => res.json())
+    .then((data) => {
+      const ipField = document.getElementById("visitor-ip");
+      const cityField = document.getElementById("visitor-city");
+      const ispField = document.getElementById("visitor-isp");
+
+      // HTML ke hidden fields me IP aur City bhar dega
+      if (ipField && data.ip) ipField.value = data.ip;
+      if (cityField && data.city)
+        cityField.value = `${data.city}, ${data.region}, ${data.country_name}`;
+      if (ispField && data.org) ispField.value = data.org;
+    })
+    .catch((err) => console.log("Visitor analytics skipped"));
 }
