@@ -1,10 +1,10 @@
 /**
  * ===================================================================
  * KRISHNA SAHU - STUDENT PORTFOLIO JAVASCRIPT
- * 
+ *
  * Tech Stack: Pure Vanilla JavaScript (Zero dependencies)
  * Human-Readable, Modular, and Secure by Default
- * 
+ *
  * ===== EDIT YOUR PERSONAL INFORMATION HERE =====
  * ===================================================================
  */
@@ -15,12 +15,12 @@ const portfolio = {
   role: "BCA Student & Aspiring Full-Stack Developer",
   location: "Uttar Pradesh, India",
   email: "krishnasahu.dev@example.com", // Replace with your actual email
-  
+
   // --- Social Profiles ---
   social: {
     github: "https://github.com/your-username", // Replace with your GitHub URL
     linkedin: "https://linkedin.com/in/your-username", // Replace with your LinkedIn URL
-    emailLink: "mailto:krishnasahu.dev@example.com"
+    emailLink: "mailto:krishnasahu.dev@example.com",
   },
 
   // --- Hero Section Typing Phrases ---
@@ -28,7 +28,7 @@ const portfolio = {
     "Full-Stack Web Applications",
     "Clean & Accessible Interfaces",
     "Fast & Reliable Backend APIs",
-    "Modern JavaScript Solutions"
+    "Modern JavaScript Solutions",
   ],
 
   // --- Skills Section (Categorized) ---
@@ -36,23 +36,50 @@ const portfolio = {
     {
       title: "Frontend Development",
       icon: "🎨",
-      skills: ["HTML5", "CSS3", "JavaScript (ES6+)", "Responsive Design", "DOM API", "Tailwind CSS", "Flexbox & Grid"]
+      skills: [
+        "HTML5",
+        "CSS3",
+        "JavaScript (ES6+)",
+        "Responsive Design",
+        "DOM API",
+        "Tailwind CSS",
+        "Flexbox & Grid",
+      ],
     },
     {
       title: "Backend Development",
       icon: "⚙️",
-      skills: ["Node.js", "Express.js", "RESTful APIs", "JSON", "Server-Side Logic", "Authentication Basics"]
+      skills: [
+        "Node.js",
+        "Express.js",
+        "RESTful APIs",
+        "JSON",
+        "Server-Side Logic",
+        "Authentication Basics",
+      ],
     },
     {
       title: "Databases & Tools",
       icon: "🗄️",
-      skills: ["MongoDB", "SQL / MySQL", "Git & GitHub", "VS Code", "Postman", "Chrome DevTools"]
+      skills: [
+        "MongoDB",
+        "SQL / MySQL",
+        "Git & GitHub",
+        "VS Code",
+        "Postman",
+        "Chrome DevTools",
+      ],
     },
     {
       title: "Computer Science Core",
       icon: "🧠",
-      skills: ["Data Structures & Algorithms", "Object-Oriented Programming (OOP)", "DBMS Concepts", "Operating Systems Basics"]
-    }
+      skills: [
+        "Data Structures & Algorithms",
+        "Object-Oriented Programming (OOP)",
+        "DBMS Concepts",
+        "Operating Systems Basics",
+      ],
+    },
   ],
 
   // --- Projects Section ---
@@ -62,7 +89,8 @@ const portfolio = {
       title: "Full-Stack E-Commerce Store",
       category: "fullstack",
       categoryLabel: "Full-Stack",
-      description: "A functional online shopping application featuring dynamic product listings, category filters, interactive shopping cart, and mock checkout flow.",
+      description:
+        "A functional online shopping application featuring dynamic product listings, category filters, interactive shopping cart, and mock checkout flow.",
       image: "assets/images/project-ecommerce.svg",
       technologies: ["JavaScript", "Node.js", "Express", "MongoDB", "CSS3"],
       github: "https://github.com/your-username/ecommerce-store",
@@ -71,49 +99,62 @@ const portfolio = {
         "Product catalog with search, price filtering, and pagination",
         "Persistent shopping cart using browser storage and REST API",
         "Responsive checkout interface with client-side validation",
-        "Clean MVC folder architecture on the backend"
-      ]
+        "Clean MVC folder architecture on the backend",
+      ],
     },
     {
       id: "project-2",
       title: "Kanban Task Management App",
       category: "frontend",
       categoryLabel: "Frontend",
-      description: "A drag-and-drop productivity dashboard designed to organize tasks across 'To-Do', 'In Progress', and 'Completed' columns with local persistence.",
+      description:
+        "A drag-and-drop productivity dashboard designed to organize tasks across 'To-Do', 'In Progress', and 'Completed' columns with local persistence.",
       image: "assets/images/project-taskmanager.svg",
-      technologies: ["JavaScript (ES6)", "HTML5 Drag & Drop", "CSS Grid", "LocalStorage"],
+      technologies: [
+        "JavaScript (ES6)",
+        "HTML5 Drag & Drop",
+        "CSS Grid",
+        "LocalStorage",
+      ],
       github: "https://github.com/your-username/task-manager",
       liveDemo: "https://your-username.github.io/task-manager",
       features: [
         "Drag and drop task cards between custom status columns",
         "Auto-saves all board states seamlessly to localStorage",
         "Color-coded priority tags and due date indicators",
-        "Accessible keyboard shortcuts for creating and editing tasks"
-      ]
+        "Accessible keyboard shortcuts for creating and editing tasks",
+      ],
     },
     {
       id: "project-3",
       title: "Live Weather & Forecast Dashboard",
       category: "javascript",
       categoryLabel: "JavaScript API",
-      description: "A clean, responsive weather application fetching real-time meteorological data, temperature metrics, humidity, and 5-day forecasts by city.",
+      description:
+        "A clean, responsive weather application fetching real-time meteorological data, temperature metrics, humidity, and 5-day forecasts by city.",
       image: "assets/images/project-weather.svg",
-      technologies: ["Vanilla JavaScript", "OpenWeather API", "CSS3 Flexbox", "Fetch API"],
+      technologies: [
+        "Vanilla JavaScript",
+        "OpenWeather API",
+        "CSS3 Flexbox",
+        "Fetch API",
+      ],
       github: "https://github.com/your-username/weather-dashboard",
       liveDemo: "https://your-username.github.io/weather-dashboard",
       features: [
         "Instant city search with error handling for invalid locations",
         "Dynamic background changes reflecting live weather conditions",
         "Metrics display: Humidity, wind speed, pressure, and UV index",
-        "Clean asynchronous code using modern async/await patterns"
-      ]
+        "Clean asynchronous code using modern async/await patterns",
+      ],
     },
     {
       id: "project-4",
       title: "Interactive CS Quiz Platform",
       category: "javascript",
       categoryLabel: "JavaScript Tool",
-      description: "An educational quiz web app testing computer science concepts, data structures, and web fundamentals with instant scoring and explanations.",
+      description:
+        "An educational quiz web app testing computer science concepts, data structures, and web fundamentals with instant scoring and explanations.",
       image: "assets/images/project-quiz.svg",
       technologies: ["HTML5", "CSS3", "JavaScript", "JSON"],
       github: "https://github.com/your-username/cs-quiz-app",
@@ -122,9 +163,9 @@ const portfolio = {
         "Timed quiz mode with randomized question pools",
         "Real-time score calculation and detailed answers review",
         "Customizable difficulty categories (Easy, Intermediate, Hard)",
-        "Mobile-optimized touch layout for quick question answering"
-      ]
-    }
+        "Mobile-optimized touch layout for quick question answering",
+      ],
+    },
   ],
 
   // --- Education Section ---
@@ -133,23 +174,30 @@ const portfolio = {
       degree: "Bachelor of Computer Applications (BCA)",
       period: "2023 - 2026",
       institution: "Affiliated University / College • Uttar Pradesh, India",
-      details: "Pursuing undergraduate degree focusing on software development, database administration, web technologies, and computational foundations.",
+      details:
+        "Pursuing undergraduate degree focusing on software development, database administration, web technologies, and computational foundations.",
       coursework: [
         "Data Structures & Algorithms",
         "Web Technologies",
         "Database Management Systems (DBMS)",
         "Object-Oriented Programming (OOP)",
         "Software Engineering",
-        "Computer Networks"
-      ]
+        "Computer Networks",
+      ],
     },
     {
       degree: "Senior Secondary (Class XII - Science & Math)",
       period: "2021 - 2023",
       institution: "State / CBSE Board • Uttar Pradesh, India",
-      details: "Completed higher secondary education with strong fundamentals in Mathematics, Computer Science, and Physics.",
-      coursework: ["Mathematics", "Computer Science Basics", "Physics", "English"]
-    }
+      details:
+        "Completed higher secondary education with strong fundamentals in Mathematics, Computer Science, and Physics.",
+      coursework: [
+        "Mathematics",
+        "Computer Science Basics",
+        "Physics",
+        "English",
+      ],
+    },
   ],
 
   // --- Certificates Section ---
@@ -159,22 +207,22 @@ const portfolio = {
       issuer: "Online Learning Academy",
       year: "2024",
       icon: "🏆",
-      link: "https://example.com/certificate/fullstack"
+      link: "https://example.com/certificate/fullstack",
     },
     {
       title: "JavaScript Algorithms & Data Structures",
       issuer: "FreeCodeCamp / Coursera",
       year: "2024",
       icon: "📜",
-      link: "https://example.com/certificate/javascript"
+      link: "https://example.com/certificate/javascript",
     },
     {
       title: "Git & GitHub Version Control Essentials",
       issuer: "Open Source Certification",
       year: "2023",
       icon: "🛠️",
-      link: "https://example.com/certificate/git"
-    }
+      link: "https://example.com/certificate/git",
+    },
   ],
 
   // --- Learning Journey Section ---
@@ -182,24 +230,28 @@ const portfolio = {
     {
       phase: "Phase 1 • Foundations",
       title: "Discovered Coding & CS Fundamentals",
-      description: "Started learning computer science concepts, problem-solving, logic building, C/C++, and foundational algorithms."
+      description:
+        "Started learning computer science concepts, problem-solving, logic building, C/C++, and foundational algorithms.",
     },
     {
       phase: "Phase 2 • Web Development",
       title: "Mastered Modern Frontend Engineering",
-      description: "Built responsive websites using semantic HTML5, modern CSS3 (Flexbox/Grid), and Vanilla JavaScript (ES6+)."
+      description:
+        "Built responsive websites using semantic HTML5, modern CSS3 (Flexbox/Grid), and Vanilla JavaScript (ES6+).",
     },
     {
       phase: "Phase 3 • Full-Stack Exploration",
       title: "Node.js, Databases & REST APIs",
-      description: "Expanded into server-side programming, creating RESTful endpoints with Express, and working with MongoDB and SQL databases."
+      description:
+        "Expanded into server-side programming, creating RESTful endpoints with Express, and working with MongoDB and SQL databases.",
     },
     {
       phase: "Phase 4 • Current Focus & Roadmap",
       title: "DSA Mastery, Open Source & Internship Ready",
-      description: "Currently refining Data Structures & Algorithms, building production-ready projects, and seeking developer internship opportunities."
-    }
-  ]
+      description:
+        "Currently refining Data Structures & Algorithms, building production-ready projects, and seeking developer internship opportunities.",
+    },
+  ],
 };
 
 // ===================================================================
@@ -348,7 +400,7 @@ function renderHeroSocials() {
   const socialLinks = [
     { name: "GitHub", url: portfolio.social.github, icon: "🐙" },
     { name: "LinkedIn", url: portfolio.social.linkedin, icon: "💼" },
-    { name: "Email", url: portfolio.social.emailLink, icon: "✉️" }
+    { name: "Email", url: portfolio.social.emailLink, icon: "✉️" },
   ];
 
   socialLinks.forEach((item) => {
@@ -595,7 +647,8 @@ function openProjectModal(project) {
   // Safe population
   document.getElementById("modal-category").textContent = project.categoryLabel;
   document.getElementById("modal-title").textContent = project.title;
-  document.getElementById("modal-description").textContent = project.description;
+  document.getElementById("modal-description").textContent =
+    project.description;
 
   const modalImg = document.getElementById("modal-image");
   modalImg.src = project.image;
@@ -802,10 +855,30 @@ function renderContactDetails() {
   container.textContent = "";
 
   const items = [
-    { type: "Email", value: portfolio.email, link: `mailto:${portfolio.email}`, icon: "✉️" },
-    { type: "Location", value: portfolio.location, link: "#contact", icon: "📍" },
-    { type: "GitHub", value: "github.com/your-username", link: portfolio.social.github, icon: "🐙" },
-    { type: "LinkedIn", value: "linkedin.com/in/your-username", link: portfolio.social.linkedin, icon: "💼" }
+    {
+      type: "Email",
+      value: portfolio.email,
+      link: `mailto:${portfolio.email}`,
+      icon: "✉️",
+    },
+    {
+      type: "Location",
+      value: portfolio.location,
+      link: "#contact",
+      icon: "📍",
+    },
+    {
+      type: "GitHub",
+      value: "github.com/your-username",
+      link: portfolio.social.github,
+      icon: "🐙",
+    },
+    {
+      type: "LinkedIn",
+      value: "linkedin.com/in/your-username",
+      link: portfolio.social.linkedin,
+      icon: "💼",
+    },
   ];
 
   items.forEach((item) => {
@@ -909,14 +982,20 @@ function initContactForm() {
     // Validate Subject
     const subjectVal = subjectInput ? subjectInput.value.trim() : "";
     if (subjectVal.length < 3) {
-      showFieldError("subject", "Please enter a subject (at least 3 characters).");
+      showFieldError(
+        "subject",
+        "Please enter a subject (at least 3 characters).",
+      );
       isValid = false;
     }
 
     // Validate Message
     const messageVal = messageInput.value.trim();
     if (messageVal.length < 10) {
-      showFieldError("message", "Please enter a message of at least 10 characters.");
+      showFieldError(
+        "message",
+        "Please enter a message of at least 10 characters.",
+      );
       isValid = false;
     } else if (messageVal.length > 1000) {
       showFieldError("message", "Message exceeds 1000 characters limit.");
@@ -935,19 +1014,35 @@ function initContactForm() {
     if (btnText) btnText.textContent = "Validating...";
     if (btnSpinner) btnSpinner.style.display = "inline";
 
-    // Simulate safe local handling & show clear instructions
-    setTimeout(() => {
-      submitBtn.disabled = false;
-      if (btnText) btnText.textContent = "Send Message";
-      if (btnSpinner) btnSpinner.style.display = "none";
-
-      statusDiv.className = "form-status success";
-      statusDiv.style.display = "block";
-      statusDiv.textContent = "✅ Form validation successful! To send real emails, connect this form to Formspree or EmailJS as explained in README.md.";
-
-      form.reset();
-      charCounter.textContent = "0 / 1000";
-    }, 600);
+    // Real Formspree Email Submission
+    fetch("https://formspree.io/f/xzebzpkp", {
+      method: "POST",
+      body: new FormData(form),
+      headers: { Accept: "application/json" },
+    })
+      .then((response) => {
+        if (response.ok) {
+          statusDiv.className = "form-status success";
+          statusDiv.style.display = "block";
+          statusDiv.textContent =
+            "✅ Message sent successfully! I will reply to you soon.";
+          form.reset();
+          charCounter.textContent = "0 / 1000";
+        } else {
+          throw new Error("Failed");
+        }
+      })
+      .catch(() => {
+        statusDiv.className = "form-status error";
+        statusDiv.style.display = "block";
+        statusDiv.textContent =
+          "❌ Message send nahi ho paya. Please dobara try karein.";
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+        if (btnText) btnText.textContent = "Send Message";
+        if (btnSpinner) btnSpinner.style.display = "none";
+      });
   });
 
   function showFieldError(fieldName, message) {
@@ -1000,7 +1095,7 @@ function initBackToTop() {
   backToTopBtn.addEventListener("click", () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   });
 }
