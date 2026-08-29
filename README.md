@@ -35,7 +35,7 @@ const portfolio = {
   email: "your-email@example.com",
   
   social: {
-    github: "https://github.com/your-username",
+    github: "https://github.com/krishna-sahu-ji",
     linkedin: "https://linkedin.com/in/your-username",
     emailLink: "mailto:your-email@example.com"
   },

@@ -18,7 +18,7 @@ const portfolio = {
 
   // --- Social Profiles ---
   social: {
-    github: "https://github.com/your-username", // Replace with your GitHub URL
+    github: "https://github.com/krishna-sahu-ji", // Replace with your GitHub URL
     linkedin: "https://linkedin.com/in/your-username", // Replace with your LinkedIn URL
     emailLink: "mailto:krishnasahu.dev@example.com",
   },
@@ -869,7 +869,7 @@ function renderContactDetails() {
     },
     {
       type: "GitHub",
-      value: "github.com/your-username",
+      value: "https://github.com/krishna-sahu-ji",
       link: portfolio.social.github,
       icon: "🐙",
     },

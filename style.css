@@ -600,8 +600,8 @@ button, input, textarea {
 }
 
 .profile-avatar {
-  width: 140px;
-  height: 140px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   margin: 0 auto 20px auto;
   border: 3px solid var(--border-color);
