@@ -276,6 +276,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initBackToTop();
   updateCurrentYear();
   fetchVisitorDetails();
+  init3DTiltEffect();
 });
 
 /**
@@ -1148,4 +1149,34 @@ function fetchVisitorDetails() {
       if (ispField && data.org) ispField.value = data.org;
     })
     .catch((err) => console.log("Visitor analytics skipped"));
+}
+/**
+ * 18. 3D MOUSE TILT EFFECT FOR CARDS
+ */
+function init3DTiltEffect() {
+  const cards = document.querySelectorAll(
+    ".profile-card, .project-card, .skill-category-card",
+  );
+
+  cards.forEach((card) => {
+    card.addEventListener("mousemove", (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+
+      // 3D Angle Calculation
+      const rotateX = ((y - centerY) / centerY) * -12;
+      const rotateY = ((x - centerX) / centerX) * 12;
+
+      card.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) scale3d(1.02, 1.02, 1.02)`;
+    });
+
+    card.addEventListener("mouseleave", () => {
+      card.style.transform =
+        "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)";
+    });
+  });
 }
