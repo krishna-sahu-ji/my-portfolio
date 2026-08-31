@@ -1678,3 +1678,56 @@ button, input, textarea {
 .profile-card:hover .profile-avatar {
   transform: translateZ(45px) scale(1.05);
 }
+/* ====================================================
+   CUSTOM NEON GLOWING MAGNETIC CURSOR
+   ==================================================== */
+
+.custom-cursor-dot,
+.custom-cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: opacity 0.25s ease;
+  opacity: 0;
+}
+
+.custom-cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-primary);
+  box-shadow: 0 0 10px var(--accent-primary), 0 0 18px var(--accent-secondary);
+}
+
+.custom-cursor-outline {
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid var(--accent-secondary);
+  background: rgba(59, 130, 246, 0.04);
+  backdrop-filter: blur(1px);
+  transition: width 0.2s cubic-bezier(0.25, 1, 0.5, 1),
+              height 0.2s cubic-bezier(0.25, 1, 0.5, 1),
+              border-color 0.2s ease,
+              background-color 0.2s ease,
+              transform 0.15s ease-out;
+}
+
+/* Hover Expand on Interactive Elements */
+.custom-cursor-outline.cursor-hover {
+  width: 56px;
+  height: 56px;
+  border-color: var(--accent-emerald);
+  background-color: rgba(16, 185, 129, 0.12);
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.35);
+}
+
+/* Disable on Mobile / Touch Screens */
+@media (pointer: coarse) {
+  .custom-cursor-dot,
+  .custom-cursor-outline {
+    display: none !important;
+  }
+}

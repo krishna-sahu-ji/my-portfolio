@@ -277,6 +277,7 @@ document.addEventListener("DOMContentLoaded", () => {
   updateCurrentYear();
   fetchVisitorDetails();
   init3DTiltEffect();
+  initCustomCursor();
 });
 
 /**
@@ -1178,5 +1179,65 @@ function init3DTiltEffect() {
       card.style.transform =
         "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)";
     });
+  });
+}
+/**
+ * NEON GLOWING MAGNETIC CURSOR
+ */
+function initCustomCursor() {
+  const dot = document.getElementById("cursor-dot");
+  const outline = document.getElementById("cursor-outline");
+  if (!dot || !outline) return;
+
+  let mouseX = window.innerWidth / 2;
+  let mouseY = window.innerHeight / 2;
+  let outlineX = mouseX;
+  let outlineY = mouseY;
+  let isVisible = false;
+
+  window.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+
+    dot.style.left = `${mouseX}px`;
+    dot.style.top = `${mouseY}px`;
+
+    if (!isVisible) {
+      dot.style.opacity = "1";
+      outline.style.opacity = "1";
+      isVisible = true;
+    }
+  });
+
+  // Fluid trailing physics animation
+  function animateCursor() {
+    outlineX += (mouseX - outlineX) * 0.15;
+    outlineY += (mouseY - outlineY) * 0.15;
+
+    outline.style.left = `${outlineX}px`;
+    outline.style.top = `${outlineY}px`;
+
+    requestAnimationFrame(animateCursor);
+  }
+  animateCursor();
+
+  // Hover expand on buttons, links, cards
+  const interactiveElements = document.querySelectorAll(
+    "a, button, input, textarea, .project-card, .skill-category-card, .filter-btn, .theme-toggle",
+  );
+
+  interactiveElements.forEach((el) => {
+    el.addEventListener("mouseenter", () =>
+      outline.classList.add("cursor-hover"),
+    );
+    el.addEventListener("mouseleave", () =>
+      outline.classList.remove("cursor-hover"),
+    );
+  });
+
+  document.addEventListener("mouseleave", () => {
+    dot.style.opacity = "0";
+    outline.style.opacity = "0";
+    isVisible = false;
   });
 }
